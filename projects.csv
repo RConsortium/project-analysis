@@ -1,0 +1,33 @@
+Year,quarter,Project,WorkProduct, PrimaryInvestigator, Email, URL,amount, status
+2018, Q1, Maintaining DBI,Package, Kirill Muller, krlmlr at mailbox.org,  http://dbi.r-dbi.org/, 26500, Ongoing
+2018, Q1, Ongoing infrastructural development for R on Windows and MacOS,Infrastructure, Jeroen Ooms, jeroenooms at gmail.com, ,62400,Ongoing
+2018, Q1, Developing Tools and Templates for Teaching Materials, Teaching, Francois Michonneau, , , 10000,Ongoing
+2018, Q1, PSI application for collaboration to create online R package validation repository,Infrastructure, Lyn Taylor, , , 4000,Ongoing
+2018, Q1, A unified platform for missing values methods and workflows,  Infrastructure, Julie Josse and Nicholas Tierney, , , 10000,Ongoing
+2018, Q1, histoRicalg — Preserving and Transfering Algorithmic Knowledge, Documentation, John C Nash ,  ,  https://gitlab.com/nashjc/histoRicalg,4000,Ongoing
+2018, Q1, Proposal to Create an R Consortium Working Group Focused on US Census Data, Data, Ari Lamstein, , , 4000,Ongoing
+2017, Q1, Adding Linux Binary Builders to R-Hub,Infrastructure, Dirk Eddelbuettel, edd at debian.org, https://github.com/r-hub/rhub-linux-builders, 15000,Ongoing
+2017, Q1, An Infrastructure for Building R Packages on MacOS with Hombrew,Infrastructure, Jeroen Ooms, jeroenooms at gmail.com, ,12000,Ongoing
+2017, Q1, Conference Management System for R Consortium Sponsored Conferences,Infrastructure, Heather Turner, ht at heatherturner.net, ,19000,Ongoing
+2017, Q1, Continued Development of the R API for Distributed Computing,Package, Michael Lawrence, michafla at gene.com, ,15000,Ongoing
+2017, Q1, Establishing  DBI,Package, Kirill Muller, krlmlr at mailbox.org, ,26500,Ongoing
+2017, Q1, Forwards Workshops for Women and Girls,Diversity_UserExpansion, Dianne Cook, rowforwards at gmail.com, http://forwards.github.io, 25000,Ongoing
+2017, Q1, Joint Profiling of Native and R Code,Package, Kirill Muller, krlmlr at mailbox.org, ,11000,Ongoing
+2017, Q1, R-hub #2,Infrastructure, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 89500,Ongoing
+2017, Q1, School of Data Material Development,Teaching, Heidi Seibold, heidi at schoolofdata.ch, , 11200,Ongoing
+2017, Q1, Stars: Scalable Spatiotemporal Tidy Arrays for R,Package, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://github.com/edzer/stars, 10000,Ongoing
+2017, Q2, Quantities for R,Package, Inaki Ucar, inaki.ucar at uc3m.es, ,10000 ,Ongoing
+2017, Q2, Refactoring and updating the SWIG R module,Package, Richard Beare, richard.beare at monash.edu, , 10000,Ongoing
+2017, Q2, Future Minimal API: Specification with Backend Conformance Test Suite,Infrastructure, Henrik Bengtsson, henrik.bengtsson at gmail.com, ,10000,Ongoing
+2017, Q2, An Earth data processing backend for testing and evaluating stars,Infrastructure, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://www.rdocumentation.org/packages/stars/versions/0.0, 5000 ,Ongoing
+2016, Q1, A Unified Framework for Distributed Computing in R,Package, Michael Lawrence, michafla at gene.com, , 10000,Ongoing
+2016, Q1, Improving Database Interface (DBI),Package, Kirill Muller, krlmlr at mailbox.org, https://www.r-dbi.org/, 25000,Ongoing
+2016, Q1, R Implementation Optimization and Tooling Workshops (RIOT),Teaching, Mark Hornick, , http://riotworkshop.github.io/, 10000,Completed
+2016, Q1, R Localization Proposal (RL10N),Package, Richie Cotton, , https://4dpiecharts.com/2016/03/23/rl10n-let-r-speak-your-language/, 10000,Ongoing
+2016, Q1, Sat R Days,Teaching, Gergely Daroczi, , http://planning.satrdays.org/, 10000,Ongoing
+2016, Q1, Simple Features Access for R,Package, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://r-spatial.github.io/sf/, 10000,Completed
+2016, Q1, Software Carpentry R Instructor Training,Teaching, John Blishak, ,http://software-carpentry.org/blog/2016/03/r-consortium-training.html, 10000,Completed
+2016, Q2, The R Documentation Task Force: The Next Generation R Documentation System,Infrastructure, Andrew Redd, andrew.redd@hsc.utah.edu, , 10000,Ongoing
+2016, Q2, Interactive data manipulation in mapview,Package,  Tim Appelhans, , , 9100,Completed
+2016, Q2, R-Ladies Alignment and Global Expansion,Diversity_UserExpansion, Gabriela de Queiroz, info@rladies.org, http://rladies.org, 10000,Completed
+2015, Q2, R-Hub,Infrastructure, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 80000,Completed
