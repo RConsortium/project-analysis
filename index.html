@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>R-Consortium Projects</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+ <link href="css/custom.min.css" rel="stylesheet">
+<link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script src="js/csv_to_html_table.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <style>  
+    
+    tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+   
+   
+    body {
+  font:  "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+      background-color: #fff;
+}
+
+
+
+.hero-bkg-animated {
+  background: white url(images/rcon.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  
+  height: 3600px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  -webkit-animation: slide 30s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+
+    </style>
+  </head>
+  <body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div >
+                 <a id="logo" href="https://www.r-consortium.org" >
+
+<img alt="R Consortium" src="images/Rc.png" width = "250" heigth = "125"/> 
+</a>  
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                          </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+    <div class="container hero-bkg-animated" >
+	<div class="row"> 
+	<br/><br/><br/>
+      <h1> - ISC Funded Projects</h1><hr/>
+       </div>
+
+ <!-- page content -->
+        <div class="right_col " role="main">
+<!-- top tiles -->
+          <div class="row tile_count">
+<script>
+ window.onload = function(){
+d3.csv("https://raw.githubusercontent.com/RConsortium/project-analysis/master/projects.csv").then(function(data) {
+   var cleandata = data.map(function(d) {
+    var cleanD = {};
+    d3.keys(d).forEach(function(k) {
+      cleanD[_.trim(k)] = _.trim(d[k]);
+    });
+    return cleanD;
+  });
+  
+    var amt = d3.nest()
+  .key(function(d) { return d.Year })
+    .rollup(function(v) { return {
+    count: v.length,
+    total: d3.sum(v, function(d) { return d.amount; })    
+  }; })
+  .entries(cleandata);
+  
+  var amt2 = JSON.stringify(amt);
+  var parsedData = JSON.parse(amt2);
+  console.log(parsedData);
+   
+  var yearq = [];
+   var countsy = [];
+   var funds = [];
+    
+  
+    for(let i = 0, l = parsedData.length; i < l; i++) {   
+  yearq.push(parsedData[i].key)
+    countsy.push(parsedData[i].value.count) 
+   funds.push(parsedData[i].value.total) 
+    }
+   totalfunds = d3.sum(funds);
+   totalcounts = d3.sum(countsy);
+   //console.log(yearq.length);
+ document.getElementById('years').innerHTML = yearq.length;  
+ document.getElementById('projects').innerHTML = totalcounts;
+ document.getElementById('allfunds').innerHTML = totalfunds.toLocaleString();
+
+
+var d = new Date();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+ourdate = "by " + months[d.getMonth()] + ", " + d.getUTCFullYear();
+
+document.getElementById("now").innerHTML = ourdate;
+
+
+});
+};
+</script>
+
+            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Funded Projects</span>
+              <div id="projects" class="count red"></div>
+              <span class="count_bottom"><i id="now"  class="green"><i class="fa fa-sort-asc"></i> </i></span>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Awarded (USD) </span>
+              <div id="allfunds" class="count blue"></div>
+              <span class="count_bottom"><i id="now"   class="green"><i class="fa fa-sort-asc"></i> </i> </span>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Years </span>
+              <div id="years" class="count "></div>
+              <span class="count_bottom"><i id="now" class="green"><i class="fa fa-sort-asc"></i> </i> </span>
+            </div>
+</div>
+<hr/>
+  <div id="table-container" style="margin-right:20px;margin-left:20px;">
+    
+    <!-- /.container -->
+    <script type="text/javascript">
+      
+        //my custom function that creates a hyperlink
+  function format_link(link){
+    if (link)
+      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+    else
+      return "";
+  }
+      
+      init_table({
+        csv_path: 'https://raw.githubusercontent.com/RConsortium/project-analysis/master/projects.csv', 
+        element: 'table-container', 
+        allow_download: true,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": true, "autoWidth": true},
+        custom_formatting: [[6, format_link]] //execute the function on the 6th column of every row
+      });
+    </script>
+</div>
+
+ <div class="col-md-12 col-sm-12 col-xs-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Visualization</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rcon_chart" style="height:550px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+<div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Yearly Spending on Projects</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rcon_chart2" style="height:500px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Status of Projects</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="status_chart" style="height:500px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Primary Investigators</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pinv" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Primary Investigators</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pinv2" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+ <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Funding By Work-Product</h2>
+                    
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pie" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Number of Projects  By Work-Product</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pie2" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Funding Level</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pie_fundlevel" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Projects by Quarter</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="echart_pie_q" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+</div>
+</div>
+<script src="js/d3/d3.min.js"></script>
+<script src="js/lodash-4.17.10/package/lodash.min.js"></script>
+<script src="js/echarts/echarts.js"></script>
+ <!-- Custom Theme Scripts -->
+    <script src="js/echarts/custom.min.js"></script>
+<script src="js/echarts/customdata.js"></script>
+
+  </body>
+</html>
