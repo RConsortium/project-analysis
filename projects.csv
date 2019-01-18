@@ -27,7 +27,7 @@ Year,quarter,Project,WorkProduct, PrimaryInvestigator, Email, URL,amount, status
 2016, Q1, Sat R Days,Teaching, Gergely Daroczi, , http://planning.satrdays.org/, 10000,Ongoing
 2016, Q1, Simple Features Access for R,Package, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://r-spatial.github.io/sf/, 10000,Completed
 2016, Q1, Software Carpentry R Instructor Training,Teaching, John Blishak, ,http://software-carpentry.org/blog/2016/03/r-consortium-training.html, 10000,Completed
-2016, Q2, The R Documentation Task Force: The Next Generation R Documentation System,Infrastructure, Andrew Redd, andrew.redd@hsc.utah.edu, , 10000,Ongoing
+2016, Q2, The R Documentation Task Force: The Next Generation R Documentation System,Documentation, Andrew Redd, andrew.redd@hsc.utah.edu, , 10000,Ongoing
 2016, Q2, Interactive data manipulation in mapview,Package,  Tim Appelhans, , , 9100,Completed
 2016, Q2, R-Ladies Alignment and Global Expansion,Diversity_UserExpansion, Gabriela de Queiroz, info@rladies.org, http://rladies.org, 10000,Completed
 2015, Q2, R-Hub,Infrastructure, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 80000,Completed
