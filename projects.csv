@@ -5,7 +5,7 @@ Year,quarter,Project,WorkProduct, PrimaryInvestigator, Email, URL,amount, status
 2018, Q1, PSI application for collaboration to create online R package validation repository,Infrastructure, Lyn Taylor, , , 4000,Ongoing
 2018, Q1, A unified platform for missing values methods and workflows,  Infrastructure, Julie Josse and Nicholas Tierney, , , 10000,Ongoing
 2018, Q1, histoRicalg — Preserving and Transfering Algorithmic Knowledge, Documentation, John C Nash ,  ,  https://gitlab.com/nashjc/histoRicalg,4000,Ongoing
-2018, Q1, Proposal to Create an R Consortium Working Group Focused on US Census Data, Data, Ari Lamstein, , , 4000,Ongoing
+2018, Q1, Proposal to Create an R Consortium Working Group Focused on US Census Data, Data, Ari Lamstein, , , 4000,Completed
 2017, Q1, Adding Linux Binary Builders to R-Hub,Infrastructure, Dirk Eddelbuettel, edd at debian.org, https://github.com/r-hub/rhub-linux-builders, 15000,Ongoing
 2017, Q1, An Infrastructure for Building R Packages on MacOS with Hombrew,Infrastructure, Jeroen Ooms, jeroenooms at gmail.com, ,12000,Completed
 2017, Q1, Conference Management System for R Consortium Sponsored Conferences,Infrastructure, Heather Turner, ht at heatherturner.net, ,19000,Ongoing
