@@ -80,11 +80,11 @@ $(document).ready(function() {
     // Setup - add a text input to each footer cell
     $('#my-table thead th').each( function () {   // change tfoot here to thead or vice versa to reposition the column search above or below
         var title = $(this).text();
-        $(this).html( ' '+ title +' <br> <input type="text" placeholder="Search '+title+'" />' );
+        $(this).html( ' '+ title +' <br> <input type="text" size="10%" placeholder="Search '+title+'" />' );
     } );
 $('#my-table tfoot th').each( function () {   // change tfoot here to thead or vice versa to reposition the column search above or below
         var title = $(this).text();
-        $(this).html( '<input type="text" size="10%" placeholder="Search '+title+'" />' );
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
     } );
  
     // DataTable
