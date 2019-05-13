@@ -84,7 +84,7 @@ $(document).ready(function() {
     } );
 $('#my-table tfoot th').each( function () {   // change tfoot here to thead or vice versa to reposition the column search above or below
         var title = $(this).text();
-        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+        $(this).html( '<input type="text" size="10%" placeholder="Search '+title+'" />' );
     } );
  
     // DataTable
