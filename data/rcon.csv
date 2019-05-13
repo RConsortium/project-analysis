@@ -4,7 +4,7 @@ Year,GrantCycle,Project,WorkProduct, PrimaryInvestigator, Email, URL,amount, sta
 2018, Spring, Developing Tools and Templates for Teaching Materials, Teaching, Francois Michonneau, , , 10000,Ongoing
 2018, Spring, PSI application for collaboration to create online R package validation repository,Infrastructure, Lyn Taylor, , , 4000,Ongoing
 2018, Spring, A unified platform for missing values methods and workflows,  Infrastructure, Julie Josse and Nicholas Tierney, , , 10000,Ongoing
-2018, Spring, histoRicalg — Preserving and Transfering Algorithmic Knowledge, Documentation, John C Nash ,  ,  https://gitlab.com/nashjc/histoRicalg,4000,Ongoing
+2018, Spring, histoRicalg - Preserving and Transfering Algorithmic Knowledge, Documentation, John C Nash ,  ,  https://gitlab.com/nashjc/histoRicalg,4000,Ongoing
 2018, Spring, Proposal to Create an R Consortium Working Group Focused on US Census Data, Data, Ari Lamstein, , , 4000,Completed
 2017, Spring, Adding Linux Binary Builders to R-Hub,Infrastructure, Dirk Eddelbuettel, edd at debian.org, https://github.com/r-hub/rhub-linux-builders, 15000,Ongoing
 2017, Spring, An Infrastructure for Building R Packages on MacOS with Hombrew,Infrastructure, Jeroen Ooms, jeroenooms at gmail.com, ,12000,Completed
