@@ -1,33 +1,33 @@
-Year,GrantCycle,Project,WorkProduct, PrimaryInvestigator, Email, URL,amount, status
-2018, Spring, Maintaining DBI,Package, Kirill Muller, krlmlr at mailbox.org,  http://dbi.r-dbi.org/, 26500, Ongoing
-2018, Spring, Ongoing infrastructural development for R on Windows and MacOS,Infrastructure, Jeroen Ooms, jeroenooms at gmail.com, ,62400,Ongoing
-2018, Spring, Developing Tools and Templates for Teaching Materials, Teaching, Francois Michonneau, , , 10000,Ongoing
-2018, Spring, PSI application for collaboration to create online R package validation repository,Infrastructure, Lyn Taylor, , , 4000,Ongoing
-2018, Spring, A unified platform for missing values methods and workflows,  Infrastructure, Julie Josse and Nicholas Tierney, , , 10000,Ongoing
-2018, Spring, histoRicalg - Preserving and Transfering Algorithmic Knowledge, Documentation, John C Nash ,  ,  https://gitlab.com/nashjc/histoRicalg,4000,Ongoing
-2018, Spring, Proposal to Create an R Consortium Working Group Focused on US Census Data, Data, Ari Lamstein, , , 4000,Completed
-2017, Spring, Adding Linux Binary Builders to R-Hub,Infrastructure, Dirk Eddelbuettel, edd at debian.org, https://github.com/r-hub/rhub-linux-builders, 15000,Ongoing
-2017, Spring, An Infrastructure for Building R Packages on MacOS with Hombrew,Infrastructure, Jeroen Ooms, jeroenooms at gmail.com, ,12000,Completed
-2017, Spring, Conference Management System for R Consortium Sponsored Conferences,Infrastructure, Heather Turner, ht at heatherturner.net, ,19000,Ongoing
-2017, Spring, Continued Development of the R API for Distributed Computing,Package, Michael Lawrence, michafla at gene.com, ,15000,Ongoing
-2017, Spring, Establishing  DBI,Package, Kirill Muller, krlmlr at mailbox.org, ,26500,Ongoing
-2017, Spring, Forwards Workshops for Women and Girls,Diversity_UserExpansion, Dianne Cook, rowforwards at gmail.com, http://forwards.github.io, 25000,Ongoing
-2017, Spring, Joint Profiling of Native and R Code,Package, Kirill Muller, krlmlr at mailbox.org, ,11000,Ongoing
-2017, Spring, R-hub #2,Infrastructure, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 89500,Ongoing
-2017, Spring, School of Data Material Development,Teaching, Heidi Seibold, heidi at schoolofdata.ch, , 11200,Ongoing
-2017, Spring, Stars: Scalable Spatiotemporal Tidy Arrays for R,Package, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://github.com/edzer/stars, 10000,Ongoing
-2017, Fall, Quantities for R,Package, Inaki Ucar, inaki.ucar at uc3m.es, ,10000 ,Ongoing
-2017, Fall, Refactoring and updating the SWIG R module,Package, Richard Beare, richard.beare at monash.edu, , 10000,Ongoing
-2017, Fall, Future Minimal API: Specification with Backend Conformance Test Suite,Infrastructure, Henrik Bengtsson, henrik.bengtsson at gmail.com, ,10000,Ongoing
-2017, Fall, An Earth data processing backend for testing and evaluating stars,Infrastructure, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://www.rdocumentation.org/packages/stars/versions/0.0, 5000 ,Ongoing
-2016, Spring, A Unified Framework for Distributed Computing in R,Package, Michael Lawrence, michafla at gene.com, , 10000,Ongoing
-2016, Spring, Improving Database Interface (DBI),Package, Kirill Muller, krlmlr at mailbox.org, https://www.r-dbi.org/, 25000,Ongoing
-2016, Spring, R Implementation Optimization and Tooling Workshops (RIOT),Teaching, Mark Hornick, , http://riotworkshop.github.io/, 10000,Completed
-2016, Spring, R Localization Proposal (RL10N),Package, Richie Cotton, , https://4dpiecharts.com/2016/03/23/rl10n-let-r-speak-your-language/, 10000,Ongoing
-2016, Spring, Sat R Days,Teaching, Gergely Daroczi, , http://planning.satrdays.org/, 10000,Ongoing
-2016, Spring, Simple Features Access for R,Package, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://r-spatial.github.io/sf/, 10000,Completed
-2016, Spring, Software Carpentry R Instructor Training,Teaching, John Blishak, ,http://software-carpentry.org/blog/2016/03/r-consortium-training.html, 10000,Completed
-2016, Fall, The R Documentation Task Force: The Next Generation R Documentation System,Documentation, Andrew Redd, andrew.redd@hsc.utah.edu, , 10000,Ongoing
-2016, Fall, Interactive data manipulation in mapview,Package,  Tim Appelhans, , , 9100,Completed
-2016, Fall, R-Ladies Alignment and Global Expansion,Diversity_UserExpansion, Gabriela de Queiroz, info@rladies.org, http://rladies.org, 10000,Completed
-2015, Fall, R-Hub,Infrastructure, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 80000,Completed
+Year,GrantCycle,Project,WorkProduct, status, PrimaryInvestigator, Email, URL,amount
+2018, Spring, Maintaining DBI,Package, Ongoing, Kirill Muller, krlmlr at mailbox.org,  http://dbi.r-dbi.org/, 26500
+2018, Spring, Ongoing infrastructural development for R on Windows and MacOS,Infrastructure,Ongoing, Jeroen Ooms, jeroenooms at gmail.com, ,62400
+2018, Spring, Developing Tools and Templates for Teaching Materials, Teaching,Ongoing, Francois Michonneau, , , 10000
+2018, Spring, PSI application for collaboration to create online R package validation repository,Infrastructure,Ongoing, Lyn Taylor, , , 4000
+2018, Spring, A unified platform for missing values methods and workflows,  Infrastructure,Ongoing, Julie Josse and Nicholas Tierney, , , 10000
+2018, Spring, histoRicalg - Preserving and Transfering Algorithmic Knowledge, Documentation,Ongoing, John C Nash ,  ,  https://gitlab.com/nashjc/histoRicalg,4000
+2018, Spring, Proposal to Create an R Consortium Working Group Focused on US Census Data, Data,Completed, Ari Lamstein, , , 4000
+2017, Spring, Adding Linux Binary Builders to R-Hub,Infrastructure,Ongoing, Dirk Eddelbuettel, edd at debian.org, https://github.com/r-hub/rhub-linux-builders, 15000
+2017, Spring, An Infrastructure for Building R Packages on MacOS with Hombrew,Infrastructure,Completed, Jeroen Ooms, jeroenooms at gmail.com, ,12000
+2017, Spring, Conference Management System for R Consortium Sponsored Conferences,Infrastructure,Ongoing, Heather Turner, ht at heatherturner.net, ,19000
+2017, Spring, Continued Development of the R API for Distributed Computing,Package,Ongoing, Michael Lawrence, michafla at gene.com, ,15000
+2017, Spring, Establishing  DBI,Package,Ongoing, Kirill Muller, krlmlr at mailbox.org, ,26500
+2017, Spring, Forwards Workshops for Women and Girls,Diversity_UserExpansion,Ongoing, Dianne Cook, rowforwards at gmail.com, http://forwards.github.io, 25000
+2017, Spring, Joint Profiling of Native and R Code,Package,Ongoing, Kirill Muller, krlmlr at mailbox.org, ,11000
+2017, Spring, R-hub #2,Infrastructure,Ongoing, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 89500
+2017, Spring, School of Data Material Development,Teaching,Ongoing, Heidi Seibold, heidi at schoolofdata.ch, , 11200
+2017, Spring, Stars: Scalable Spatiotemporal Tidy Arrays for R,Package,Ongoing, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://github.com/edzer/stars, 10000
+2017, Fall, Quantities for R,Package,Ongoing, Inaki Ucar, inaki.ucar at uc3m.es, ,10000 
+2017, Fall, Refactoring and updating the SWIG R module,Package,Ongoing, Richard Beare, richard.beare at monash.edu, , 10000
+2017, Fall, Future Minimal API: Specification with Backend Conformance Test Suite,Infrastructure,Ongoing, Henrik Bengtsson, henrik.bengtsson at gmail.com, ,10000
+2017, Fall, An Earth data processing backend for testing and evaluating stars,Infrastructure,Ongoing, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://www.rdocumentation.org/packages/stars/versions/0.0, 5000 
+2016, Spring, A Unified Framework for Distributed Computing in R,Package,Ongoing, Michael Lawrence, michafla at gene.com, , 10000
+2016, Spring, Improving Database Interface (DBI),Package,Ongoing, Kirill Muller, krlmlr at mailbox.org, https://www.r-dbi.org/, 25000
+2016, Spring, R Implementation Optimization and Tooling Workshops (RIOT),Teaching,Completed, Mark Hornick, , http://riotworkshop.github.io/, 10000
+2016, Spring, R Localization Proposal (RL10N),Package,Ongoing, Richie Cotton, , https://4dpiecharts.com/2016/03/23/rl10n-let-r-speak-your-language/, 10000
+2016, Spring, Sat R Days,Teaching,Ongoing, Gergely Daroczi, , http://planning.satrdays.org/, 10000
+2016, Spring, Simple Features Access for R,Package,Completed, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://r-spatial.github.io/sf/, 10000
+2016, Spring, Software Carpentry R Instructor Training,Teaching,Completed, John Blishak, ,http://software-carpentry.org/blog/2016/03/r-consortium-training.html, 10000
+2016, Fall, The R Documentation Task Force: The Next Generation R Documentation System,Documentation,Ongoing, Andrew Redd, andrew.redd@hsc.utah.edu, , 10000
+2016, Fall, Interactive data manipulation in mapview,Package,Completed,  Tim Appelhans, , , 9100
+2016, Fall, R-Ladies Alignment and Global Expansion,Diversity_UserExpansion,Completed, Gabriela de Queiroz, info@rladies.org, http://rladies.org, 10000
+2015, Fall, R-Hub,Infrastructure,Completed, Gabor Csardi, csardi.gabor at gmail.com, https://github.com/r-hub, 80000
