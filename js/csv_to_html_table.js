@@ -36,7 +36,7 @@ function init_table(options) {
   var csv_options = options.csv_options || {};
   var datatables_options = options.datatables_options || {};
 
-  $("#" + el).html("<table class='table table-striped table-condensed' id='my-table'></table>");
+  $("#" + el).html("<table class='table table-striped table-hover table-condensed' id='my-table'></table>");
 
   $.when($.get(csv_path)).then(
     function(data){
@@ -80,7 +80,7 @@ $(document).ready(function() {
     // Setup - add a text input to each footer cell
     $('#my-table thead th').each( function () {   // change tfoot here to thead or vice versa to reposition the column search above or below
         var title = $(this).text();
-        $(this).html( ' '+ title +' <br> <input type="text" size="10%" placeholder="Search '+title+'" />' );
+        $(this).html( ' '+ title +' <br> <input type="text" size="11%" placeholder="Search '+title+'" />' );
     } );
 $('#my-table tfoot th').each( function () {   // change tfoot here to thead or vice versa to reposition the column search above or below
         var title = $(this).text();
