@@ -1,4 +1,12 @@
 Year,GrantCycle,Project,WorkProduct, status, PrimaryInvestigator, Email, URL,amount
+2018, Fall, serveRless, Package, Ongoing, Christoph Bodner, , https://github.com/harlecin/serverless, 10000
+2018, Fall, Symbolic Formulae for Linear Mixed Models, Package, Ongoing, Emi Tanaka, , https://emitanaka.github.io/r/posts/2019-03-07-symbolic-formulae-for-linear-mixed-models/, 6000
+2018, Fall, Editorial assistance for the R Journal, R-Journal, Ongoing, Dianne Cook, , https://rjpilot.netlify.com/, 50000
+2018, Fall, Strengthening of R in support of spatial data infrastructures management, Package, Ongoing, Emmanuel Blondel, , https://github.com/eblondel/geometa, 20000
+2018, Fall, Catalyzing R-hub adoption through R package developer advocacy, Documentation, Ongoing, Maelle Salmon, , https://github.com/r-hub/, 46050
+2018, Fall, Licensing R - Guidelines and tools, Documentation, Ongoing, Colin Fay, , https://thinkr-open.github.io/licensing-r/, 6000
+2018, Fall, Next-generation text layout in grid and ggplot2, Package, Ongoing, Claus Wilke, , https://github.com/clauswilke/gridtext, 25000
+2018, Fall, Data-Driven Discovery and Tracking of  R Consortium Activities, Infrastructure, Ongoing, Benaiah Chibuokem Ubah, , https://github.com/RConsortium/project-analysis, 5250
 2018, Spring, Maintaining DBI,Package, Ongoing, Kirill Muller, krlmlr at mailbox.org,  http://dbi.r-dbi.org/, 26500
 2018, Spring, Ongoing infrastructural development for R on Windows and MacOS,Infrastructure,Ongoing, Jeroen Ooms, jeroenooms at gmail.com, ,62400
 2018, Spring, Developing Tools and Templates for Teaching Materials, Teaching,Ongoing, Francois Michonneau, , , 10000
