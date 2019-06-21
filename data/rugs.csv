@@ -1,0 +1,72 @@
+﻿GROUP_NAME,GRANT_LEVEL,ORGANIZER,URL,CITY,COUNTRY
+Dallas R Users Group,Array,Larry D'Agostino,http://www.meetup.com/Dallas-R-Users-Group/,Dallas,USA
+New York Open Statistical Programming Meetup,Array,Jared Lander,http://www.meetup.com/nyhackr/,New York City,USA
+Spotkania Entuzjastów R - Warsaw R Users Group Meetup,Array,Przemyslaw Biecek,http://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup/,Warsaw,Poland
+Comunidad R-Hispano,Array,Virgilio Gomez-Rubio,http://r-es.org/,Madrid,Spain
+Melbourne Users of R Network,Array,Jiun Siew,https://www.meetup.com/en-AU/MelbURN-Melbourne-Users-of-R-Network/,Melbourne,Australia
+LondonR,Array,Liz Matthews & Karis Bouther,www.londonR.org,London,United Kingdom
+Austin R User Group,Array,Daniel Woodie,https://www.meetup.com/Austin-R-User-Group/,Austin,USA
+Taiwan R User Group,Array,Chia-Chi Chang,https://www.meetup.com/Taiwan-R/,Taipei,Taiwan
+Statistical Programming DC,Array,Marck Vaisman,https://www.meetup.com/stats-prog-dc/,Washington,USA
+Warsaw R Users Group,Array,Przemyslaw Biecek,https://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup/,Warsaw,Poland
+Budapest Users of R Network,Matrix,Gergely Daroczi,https://www.meetup.com/Budapest-Users-of-R-Network,Budapest,Hungary
+Portland R User Group,Matrix,Scott Chamberlain,http://www.meetup.com/portland-r-user-group/,Portland,USA
+Pozan R Users Meeting (PAZUR),Matrix,Maciej Beresewicz,http://meetup.com/Poznan-R-User-Group-PAZUR/,Pozan,Poland
+R addicts,Matrix,François Guillem,http://www.meetup.com/fr-FR/rparis/,Paris,France
+Seattle R User Group,Matrix,Zach Stednick,https://www.meetup.com/Seattle-useR/,Seattle,USA
+Greater Toronto Area (GTA) R User's Group,Matrix,Leo Guelman,https://www.meetup.com/Greater-Toronto-Area-GTA-R-Users-Group/,Toronto,Canada
+eRka,Matrix,Bartosz Sekiewicz,https://www.meetup.com/Cracow-R-User-Group/,Cracow,Poland
+R-Ladies Madrid,Matrix,Beatriz Hernández,https://www.meetup.com/rladies-mad/,Madrid,Spain
+R-Ladies RTP,Matrix,Mine Cetinkaya-Rundel,https://www.meetup.com/R-Ladies-RTP/,Durham,USA
+Atlanta R user Group,Matrix,Derek M Norton,https://www.meetup.com/R-Users-Atlanta/,Atlanta,USA
+Zurich R User Group,Matrix,Heidi Seibold,https://www.meetup.com/Zurich-R-User-Group/,Zurich,Switzerland
+Grupo de Usuarios de R de Madrid,Matrix,Carlos Ortega Fernandez,https://www.meetup.com/Grupo-de-Usuarios-de-R-de-Madrid/events/past/?scroll=true&op=past,Madrid,Spain
+BelgradeR - Data Science Serbia,Matrix,Branko Kovac,https://www.meetup.com/BelgradeR/,Belgrade,Serbia
+Grupo de Usuarios de R en Chile,Matrix,Patricio Cofre,https://www.meetup.com/useRchile/,Santiago,Chile
+R-Ladies Chicago,Matrix,Angela Li,https://www.meetup.com/rladies-chicago/,Chicago,USA
+757 R Users Group,Vector,Steven Mortimer,https://meetup.com/757-R-Users-Group,Norfolk,USA
+Adelaide R Users Group,Vector,Jonathan Carroll,https://www.meetup.com/Adelaide-R-Users/,Adelaide,Australia
+Cape R Users Group ,Vector,Maia Lesosky,https://caperuser.wordpress.com,Cape Town,South Africa
+Meetup R Nantes,Vector,Aline Deschamps,http://www.meetup.com/fr-FR/Meetup-R-Nantes/,Nantes,France
+R user group Oxford,Vector,Kieran Campbell, https://r-oxford.github.io/,Oxford,United Kingdom
+San Carlos R User Group,Vector,Ixpantia LTDA,https://www.meetup.com/es-ES/San-Carlos-R-User-Group/,Ciudad Quesada,Costa Rica
+Vienna<-R,Vector,Walter Djuric,http://www.meetup.com/viennar/,Vienna,Austria
+We R _ Penn State R Users Group,Vector,Lizbeth Benson,https://www.facebook.com/groups/WeRPennStateRUsersGroup/,State College,USA
+MadR Madison R Programming Meetup Group,Vector,Justin Meyer,https://www.meetup.com/MadR-Madison-R-Programming-UseRs-Group/,Madison,USA
+Brisbane Users of R Group (BURGr),Vector,Jessie Roberts,https://www.meetup.com/Brisbane-Users-of-R-Group-BURGr/,Brisbane,Australia
+Ann Arbor R User Group,Vector,Ellis Valentiner,https://annarborrusergroup.github.io/,Ann Arbor,USA
+Sheffield R user group,Vector,Duncan Gillespie,https://www.meetup.com/SheffieldR-Sheffield-R-Users-Group/,Sheffield,United Kingdom
+Dakar R User Group,Vector,Ahmadou Dicko,https://www.meetup.com/DakaR-R-User-Group/,Dakar,Senegal
+R-Ladies Washington D.C.,Vector,Kelly O'Briant,https://www.meetup.com/rladies-dc/,Washington D.C.,USA
+R-Ladies Buenos Aires,Vector,Laura Acion,https://www.meetup.com/rladies-buenos-aires/,Buenos Aires,Argentina
+R-Ladies Budapest,Vector,Ágnes Salánki,https://www.meetup.com/R-Ladies-Budapest/,Budapest,Hungary
+R-Ladies Connecticut,Vector,Jasmine Dumas,https://www.meetup.com/rladies-connecticut/,Hartford,USA
+Data Science Brest,Vector,Nicholas Raillard,https://www.meetup.com/Data-Science-Brest/,Brest,France
+R-Ladies Manchester,Vector,Tatjana Kecojevic,https://www.meetup.com/R-Ladies-Manchester/,Manchester,United Kingdom
+BSBRug,Vector,Luiz Aparecido Fuzaro dos Santos,https://www.facebook.com/groups/bsbrug/,Brasilia,Brazil
+Las Vegas R Users Group,Vector,Daniel Emaasit,https://www.meetup.com/Las-Vegas-R-Users-Group/,Las Vegas,USA
+R-Ladies Adelaide,Vector,Marija Dmitrijeva,https://www.meetup.com/rladies-adelaide/,Adelaide,Australia
+Sevilla R Users,Vector,Francisco Rodriguez-Sanchez,https://sevillarusers.wordpress.com/,Sevilla,Spain
+R at University of Manchester (RUM),Vector,Reka Solymosi,http://rumgroup.github.io/Home/,Manchester,United Kingdom
+R-Ladies Paris,Vector,Diane Beldame,https://www.meetup.com/rladies-paris/,Paris,France
+R-Ladies Munich,Vector,Daloha Rodriguez-Molina,https://www.meetup.com/rladies-munich/,Munich,Germany
+Tricity R Enthusiast Group (trigeR),Vector,Anna Rybinska,https://www.meetup.com/Trojmiejska-Grupa-Entuzjastow-R/,Gdansk,Poland
+Hamburg R User Group,Vector,Christian Mondorf,https://www.meetup.com/Hamburg-R-User-Group/,Hamburg,Germany
+R User Group Sylhet,Vector,Ancon Paul Bolaram,https://groups.google.com/forum/#!forum/r-user-group-sylhet,Sylhet,Bangladesh
+CanteburyR,Vector,Amit Kohli,https://www.meetup.com/Canterbury-R-Users-Group/,Cantebury,United Kingdom
+Asunción useR Group Paraguay,Vector,Paul A. Ervin,https://www.meetup.com/Asuncion-useR-Group-Paraguay-Data-and-Statistics-in-R/,Asunción,Paraguay
+R-Ladies Istanbul,Vector,Hazel Kavili,https://www.meetup.com/R-Ladies-Istanbul/,Istanbul,Turkey
+Warwick R User Group,Vector,David Selby,https://www.meetup.com/Warwick-useRs/,Coventry,United Kingdom
+R -Ladies Montevideo,Vector,Daniela Vazquez,https://www.meetup.com/rladies-montevideo/,Montevideo,Uruguay
+R-Ladies CDMX,Vector,Maria Teresa Ortiz Mancera and Silvia Gutiérrez de la Torre,https://www.meetup.com/rladiescdmx/,Mexico City,Mexico
+Boise State R User's Group,Vector,Matthew Clark,https://github.com/bsurc/rug,Boise,USA
+Tulane University R Fans (TURF),Vector,Pawel Waryszak,https://tulaneuniversityrfans.wordpress.com/,New Orleans ,USA
+Tampa R User Group,Vector,Travis Gerke,https://www.meetup.com/Tampa-R-Users-Group/,Tampa,USA
+R-Ladies Charlottesville,Vector,Samantha Toet,https://www.meetup.com/rladies-charlottesville/,Charlottesville,USA
+R-Ladies Columbus,Vector,Ezgi Karaesmen,https://www.meetup.com/RLadies-Columbus/,Columbus,USA
+R-Ladies Sarasota,Vector,Fanny Chow,http://rladies.org/,Sarasota,USA
+R-Ladies Rio,Vector,Celina Rebello,https://www.meetup.com/R-Ladies-Rio-de-Janeiro/,Rio-de-Janeiro,Brazil
+R-Ladies Dublin,Vector,Jo Niec,https://www.meetup.com/preview/R-Ladies-Dublin,Dublin,Ireland
+R-Ladies Nashville,Vector,Jennifer Thompson,https://www.meetup.com/rladies-nashville/,Nashville,USA
+R-Ladies Madrid,Vector,Bea Hernández,https://www.meetup.com/preview/rladies-madrid,Madrid,Spain
+London BeginR,Vector ,Moez Katet,https://www.meetup.com/London-beginR/,London,United Kingdom
