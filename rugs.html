@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>R Consortium| R User Group Support Program</title>
+
+    <!-- Bootstrap -->
+<link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom Theme Style -->
+    <link href="css/custom.min.css" rel="stylesheet">
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script src="js/csv_to_html_table.js"></script>
+
+<style>  
+
+    tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+
+  </style>   
+
+  </head>
+
+  <body class="nav-md" >
+    <div class="container body" >
+      <div class="main_container" >
+        <div class="col-md-3 left_col menu_fixed" style="background-color:#005479; ">
+          <div class="left_col scroll-view" style="background-color:#005479; font-size:15px">
+           
+		 <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/Rc.png" width = "230px" alt="..." class="">
+              </div>
+              <div class="profile_info">
+                <span>.</span>
+                <h2></h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <div class="clearfix"></div>
+
+            
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.html">Dashboard Landing</a></li>
+                      
+                                          </ul>
+                  </li>
+                                           <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" >
+                      <li><a href="isc.html"><i class="fa fa-pie-chart"></i>ISC Projects</a></li>
+                      <li><a href="rugs.html"><i class="fa fa-user"></i>RUGS Program</a></li>
+                      <li><a href="events.html"><i class="fa fa-comments"></i>Marketing Program</a></li>
+                    </ul>
+                  </li>
+                                  </ul>
+              </div>
+              <div class="menu_section">
+                <h3>External Links</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-sun-o"></i> R Consortium <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+			    <li><a href="https://r-consortium.org" target="_blank">Home</a></li>
+<li><a href="https://www.r-consortium.org/about" target="_blank">About</a></li>
+                      <li><a href="https://www.r-consortium.org/about/join" target="_blank">Join</a></li>
+                      <li><a href="https://www.r-consortium.org/members" target="_blank">Members</a></li>
+                      <li><a href="https://www.r-consortium.org/contact" target="_blank">Contact</a></li>
+                      </ul>
+                  </li>
+                  <li><a><i class="fa fa-th-large"></i>ISC Projects <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="https://www.r-consortium.org/projects/awarded-projects" target="_blank">Funded Projects</a></li>
+                      <li><a href="https://www.r-consortium.org/projects/r-hub" target="_blank">R Hub</a></li>
+                      <li><a href="https://www.r-consortium.org/projects/r-ladies" target="_blank">R Ladies</a></li>
+                      <li><a href="https://www.r-consortium.org/projects/r-user-group-support-program" target="_blank">R User Group Support Program</a></li>                    </ul>
+                  </li>
+                                  
+                                  </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a> 
+              <a id="menu_toggle2" data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Home" href="index.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-toggle-on"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-feed"></i> Follow Us
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="https://www.r-consortium.org/news/blog" target="_blank"><i class="fa fa-edit"></i> Blog</a></li>
+                    <li>
+                 <a href="https://twitter.com/Rconsortium" target="_blank">
+                                                <span><i class="fa fa-twitter"></i>      Twitter</span>
+                      </a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg" target="_blank"><i class="fa fa-youtube-play"></i>      Youtube</a></li>
+                    
+                  </ul>
+                </li>
+
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title">
+<div class="col-md-12 col-sm-12 col-xs-12">
+
+                <h3>R User Group Support Program Dashboard<small> Data-Driven Summaries</small></h3>
+</div>
+              </div>
+
+              
+              </div>
+            </div>
+            
+            <div class="clearfix"></div>
+
+<script>
+ window.onload = function(){
+d3.csv("data/rugs.csv").then(function(data) {
+   var cleandata = data.map(function(d) {
+    var cleanD = {};
+    d3.keys(d).forEach(function(k) {
+      cleanD[_.trim(k)] = _.trim(d[k]);
+    });
+    return cleanD;
+  });
+  
+    var country = d3.nest()
+  .key(function(d) { return d.COUNTRY })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+  
+  var country2 = JSON.stringify(country);
+  var parsedCountryData = JSON.parse(country2);    
+  
+ document.getElementById('country').innerHTML = parsedCountryData.length ;
+ //document.getElementById('allfunds').innerHTML = totalfunds.toLocaleString();
+
+var city  = d3.nest()
+  .key(function(d) { return d.CITY })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+var city2 = JSON.stringify(city);
+  var parsedCity = JSON.parse(city2);
+  
+document.getElementById('city').innerHTML = parsedCity.length;  
+
+
+var group  = d3.nest()
+  .key(function(d) { return d.GROUP_NAME })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+var group2 = JSON.stringify(group);
+  var parsedGroup = JSON.parse(group2);
+
+document.getElementById('groups').innerHTML = parsedGroup.length;  
+
+var  grant_level  = d3.nest()
+  .key(function(d) { return d.GRANT_LEVEL })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+var grant2 = JSON.stringify(grant_level);
+  var parsedGrant = JSON.parse(grant2);
+
+vector = parsedGrant[2].value;
+matrix = parsedGrant[1].value;
+array = parsedGrant[0].value;
+
+// RC gives vector groups $150, matrix $500 and array $1000
+totalawarded = vector*150 + matrix*500 + array*1000
+
+//for(i=0; i < parsedGrant.length; i++) {
+//}
+
+document.getElementById('amount').innerHTML = totalawarded.toLocaleString();  
+
+//console.log(totalawarded.toLocaleString());
+
+});
+};
+</script>
+
+<div class="row">
+              <div class="col-md-12">
+                
+                  <div class="x_content">
+                    <div class="row">
+                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats" style="background-color:#1985b6">
+                          <div class="icon" style="color:white"><i class="fa fa-users"></i>
+                          </div>
+                          <div id="groups" class="count" style="color:#ffffff"></div>
+
+                          <h3>Groups</h3>
+                          <p style="color:#ffffff"></p>
+                        </div>
+                      </div>
+
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats" >
+                          <div class="icon" style="color:#99c9de"><i class="fa fa-usd"></i>
+                          </div>
+              <div id="amount" class="count blue"></div>
+
+                          <h3>Total Grants</h3>
+                          <p></p>
+                        </div>
+                      </div>                      
+
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats" style="background-color:#1985b6">
+                          <div class="icon" style="color:#ffffff"><i class="fa fa-globe"></i>
+                          </div>
+                          <div id="country" class="count" style="color:#ffffff"></div>
+
+                          <h3>Countries</h3>
+                          <p style="color:#ffffff"></p>
+                        </div>
+                      </div>
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="tile-stats" >
+                          <div class="icon" style="color:#99c9de"><i class="fa fa-map-marker"></i>
+                          </div>
+                          <div id="city" class="count blue"></div>
+
+                          <h3>Cities</h3>
+                          <p></p>
+                        </div>
+                      </div>
+                      
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Funded R User Groups per Country</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content>
+               <div class="container">
+
+               <div id="rugs_country_chart" style="height:400px;"></div>
+
+			</div>
+                  </div>
+                </div>
+              </div>
+             
+
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2 style="color:#1985b6; font-weight:bold">Find an R User Group</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+
+<div class="container">
+   <a name="dt"></a>
+  <div id="table-container" style="margin-left:-15px;background-color:white">
+    
+    <!-- /.container -->
+    <script type="text/javascript">
+      
+        //my custom function that creates a hyperlink
+  function format_link(link){
+    if (link)
+      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+    else
+      return "";
+  }
+      
+      init_table({
+        csv_path: 'data/rugs.csv', 
+        element: 'table-container', 
+        allow_download: false,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"order": [[0, "desc" ]], "paging": true, 
+    "bScrollCollapse": true,
+    "bPaginate": false,
+    "bJQueryUI": true,
+    "aoColumnDefs": [
+        { "sWidth": "10%", "aTargets": [-1] }
+    ]
+},
+        custom_formatting: [[3, format_link]] //execute the function on the 3rd column of every row
+      });
+    </script>
+</div>
+</div>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Grant Level By Number of Groups </h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="grant_pie1" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Grant Level Fund Distribution</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="grant_bar" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+             
+              
+<div class="buttons">
+<button type="button" class="btn btn-info btn-lg btn-block" onclick="window.location.href='https://www.r-consortium.org/projects/r-user-group-support-program'"> APPLY FOR THE R  USER GROUP SUPPORT PROGRAM </button>
+</div>
+
+            </div>
+
+ 
+
+          </div>
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            R Consortium Data Pages by <a href="https://r-consortium.org">R Consortium</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+   
+    <script src="js/echarts/map/js/world.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+<script src="js/d3/d3.min.js"></script>
+<script src="js/lodash-4.17.10/package/lodash.min.js"></script>
+<script src="js/echarts/echarts.js"></script>
+ <!-- Custom Theme Scripts -->
+    <script src="js/echarts/custom.min.js"></script>
+<script src="js/jquery.csv.min.js"></script>
+    
+
+	
+  </body>
+</html>
