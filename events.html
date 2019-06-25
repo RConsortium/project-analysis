@@ -220,7 +220,7 @@ var group  = d3.nest()
 var group2 = JSON.stringify(group);
   var parsedGroup = JSON.parse(group2);
 
-document.getElementById('events').innerHTML = parsedGroup.length;  
+document.getElementById('events').innerHTML = cleandata.length;  
 
 document.getElementById('years').innerHTML = new Date().getFullYear() - 2016 + 1;  
 
