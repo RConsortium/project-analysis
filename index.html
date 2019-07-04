@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>R Consortium| ISC Projects</title>
+    <title>R Consortium| Home </title>
 
     <!-- Bootstrap -->
 <link href="css/dataTables.bootstrap.css" rel="stylesheet">
@@ -28,13 +28,114 @@
     <script src="js/csv_to_html_table.js"></script>
 
 <style>  
+.bg-black  { background-color: var(--black) }
+.bg-gray   { background-color: var(--gray) }
+.bg-silver { background-color: var(--silver) }
 
-    tfoot input {
-        width: 100%;
-        padding: 3px;
-        box-sizing: border-box;
-    }
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
 
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 200px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+.author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.author-info a {
+  color: blue;
+}
+.slider > img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: blue;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
 
   </style>   
 
@@ -69,17 +170,13 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="index.html">Dashboard Landing</a></li>
-                      
-                                          </ul>
-                  </li>
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                      </li>
                                            <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu" >
                       <li><a href="isc.html"><i class="fa fa-pie-chart"></i>ISC Projects</a></li>
-                      <li><a href="#"><i class="fa fa-user"></i>RUGS Program</a></li>
-                      <li><a href="#"><i class="fa fa-comments"></i>Marketing Program</a></li>
+                      <li><a href="rugs.html"><i class="fa fa-user"></i>RUGS Program</a></li>
+                      <li><a href="events.html"><i class="fa fa-comments"></i>Events Program</a></li>
                     </ul>
                   </li>
                                   </ul>
@@ -155,61 +252,7 @@
                   </ul>
                 </li>
 
-                <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    Quarterly Reports <i class="fa fa-bell-o"></i>
-                    <span class="badge bg-blue">1</span>
-                  </a>
-                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    <li>
-                      <a href="https://www.r-consortium.org/blog/2018/10/09/whats-new-with-r-consortium-funded-projects-in-q3-2018" target="_blank">
-                        <span class="image"><img src="images/user.png" alt="" /></span>
-                        <span>
-                          <span>John Mertic</span>
-                          <span class="time">2018/10/09</span>
-                        </span>
-                        <span class="message">
-                    What's new with R Consortium funded projects in Q3 2018
-
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.r-consortium.org/blog/2018/08/13/whats-new-with-r-consortium-funded-projects-in-q1-2018-2" target="_blank">
-                        <span class="image"><img src="images/user.png" alt="" /></span>
-                        <span>
-                          <span>John Mertic</span>
-                          <span class="time">2018/08/13</span>
-                        </span>
-                        <span class="message">
-                          What's new with R Consortium funded projects in Q2 2018
-
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.r-consortium.org/blog/2018/04/16/whats-new-with-r-consortium-funded-projects-in-q1-2018" target="_blank">
-                        <span class="image"><img src="images/user.png" alt="" /></span>
-                        <span>
-                          <span>John Mertic</span>
-                          <span class="time">2018/04/16</span>
-                        </span>
-                        <span class="message">
-                          What's new with R Consortium funded projects in Q1 2018
-
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="text-center">
-                        <a href="https://www.r-consortium.org/news/blog" target="_blank">
-                          <strong>See All Quarterly Reports</strong>
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
+                
               </ul>
             </nav>
           </div>
@@ -223,7 +266,7 @@
               <div class="title">
 <div class="col-md-12 col-sm-12 col-xs-12">
 
-                <h3>ISC Projects Dashboard<small> Data-Driven Summaries</small></h3>
+                <h3>R Consortium Activity Dashboard | <small> Data-Driven Summaries</small></h3>
 </div>
               </div>
 
@@ -235,6 +278,48 @@
 
 <script>
  window.onload = function(){
+d3.csv("data/rugs.csv").then(function(data) {
+   var cleandata = data.map(function(d) {
+    var cleanD = {};
+    d3.keys(d).forEach(function(k) {
+      cleanD[_.trim(k)] = _.trim(d[k]);
+    });
+    return cleanD;
+  });
+  
+    var country = d3.nest()
+  .key(function(d) { return d.COUNTRY })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+  
+  var country2 = JSON.stringify(country);
+  var parsedCountryData = JSON.parse(country2);    
+  
+var city  = d3.nest()
+  .key(function(d) { return d.CITY })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+var city2 = JSON.stringify(city);
+  var parsedCity = JSON.parse(city2);
+  
+document.getElementById('cities').innerHTML = "Across " + parsedCity.length + " Cities, " + parsedCountryData.length + " Countries";  
+
+
+var group  = d3.nest()
+  .key(function(d) { return d.GROUP_NAME })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+var group2 = JSON.stringify(group);
+  var parsedGroup = JSON.parse(group2);
+
+document.getElementById('groups').innerHTML = parsedGroup.length;  
+});
+
+//ISC Widget
+
 d3.csv("data/rcon.csv").then(function(data) {
    var cleandata = data.map(function(d) {
     var cleanD = {};
@@ -244,56 +329,80 @@ d3.csv("data/rcon.csv").then(function(data) {
     return cleanD;
   });
   
-    var amt = d3.nest()
-  .key(function(d) { return d.Year })
-    .rollup(function(v) { return {
-    count: v.length,
-    total: d3.sum(v, function(d) { return d.amount; })    
-  }; })
-  .entries(cleandata);
-  
-  var amt2 = JSON.stringify(amt);
-  var parsedData = JSON.parse(amt2);
-  
-   
-  var yearq = [];
-   var countsy = [];
-   var funds = [];
-    
-  
-    for(let i = 0, l = parsedData.length; i < l; i++) {   
-  yearq.push(parsedData[i].key)
-    countsy.push(parsedData[i].value.count) 
-   funds.push(parsedData[i].value.total) 
-    }
-   totalfunds = d3.sum(funds);
-   totalcounts = d3.sum(countsy); document.getElementById('years').innerHTML = yearq.length;  
- document.getElementById('projects').innerHTML = totalcounts;
- document.getElementById('allfunds').innerHTML = totalfunds.toLocaleString();
+var prjs = d3.nest()
+  .key(function(d) { return d.Project })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+document.getElementById('projects').innerHTML = prjs.length;  
 
 var piv = d3.nest()
   .key(function(d) { return d.PrimaryInvestigator })
     .rollup(function(v) { return  v.length })
     .entries(cleandata);
 
-var pinv2 = JSON.stringify(piv);
-  var parsedPinv = JSON.parse(pinv2);
-var pinvarr = [];
-for(let i = 0, l = parsedPinv.length; i < l; i++) {
-      pinvarr.push(parsedPinv[i].value);
-     }
-  var totalPinv = pinvarr.length;
+var totalPinv = piv.length;
+
+var workprod  = d3.nest()
+  .key(function(d) { return d.WorkProduct })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
   
-document.getElementById('primaryinv').innerHTML = totalPinv;  
+document.getElementById('prj_summary').innerHTML = totalPinv + " Teams, " + workprod.length + " Work Products";  
 //console.log(pinvarr.length);
 
 var d = new Date();
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 ourdate = "by " + months[d.getMonth()] + ", " + d.getUTCFullYear();
+});
 
-//document.getElementById("now").innerHTML = ourdate;
 
+// Events Widget
 
+d3.csv("data/events.csv").then(function(data) {
+   var cleandata = data.map(function(d) {
+    var cleanD = {};
+    d3.keys(d).forEach(function(k) {
+      cleanD[_.trim(k)] = _.trim(d[k]);
+    });
+    return cleanD;
+  });
+  
+    var country = d3.nest()
+  .key(function(d) { return d.COUNTRY })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+  
+  var country2 = JSON.stringify(country);
+  var parsedCountryData = JSON.parse(country2);    
+  
+ //document.getElementById('country').innerHTML = parsedCountryData.length ;
+ 
+var city  = d3.nest()
+  .key(function(d) { return d.CITY })
+    .rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+var city2 = JSON.stringify(city);
+  var parsedCity = JSON.parse(city2);
+  
+var group  = d3.nest()
+  .key(function(d) { return d.EVENT_NAME })
+    //.rollup(function(v) { return  v.length })
+    .entries(cleandata);
+
+var group2 = JSON.stringify(group);
+  var parsedGroup = JSON.parse(group2);
+
+document.getElementById('events').innerHTML = cleandata.length;  
+document.getElementById('event_summary').innerHTML = "Across " + parsedCity.length + " Cities, " + parsedCountryData.length + " Countries";  
+
+});
+d3.json("https://raw.githubusercontent.com/benubah/r-community-explorer/master/docs/data/rladies_summary.json").then(function(data) {
+
+document.getElementById('rladies').innerHTML = data[0][0].chapters; 
+document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].city + " Cities, " + data[0][0].countries + " Countries";  
 });
 };
 </script>
@@ -303,45 +412,52 @@ ourdate = "by " + months[d.getMonth()] + ", " + d.getUTCFullYear();
                 
                   <div class="x_content">
                     <div class="row">
-                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="tile-stats" style="background-color:#1985b6">
-                          <div class="icon" style="color:white"><i class="fa fa-tasks"></i>
-                          </div>
-                          <div id="projects" class="count" style="color:#ffffff"></div>
-
-                          <h3>Projects Funded</h3>
-                          <p style="color:#ffffff"></p>
-                        </div>
-                      </div>
-                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='isc.html'">
                         <div class="tile-stats" >
-                          <div class="icon" style="color:#99c9de"><i class="fa fa-usd"></i>
+                          <div class="icon" style="color:red"><i class="fa fa-tasks"></i>
                           </div>
-                          <div id="allfunds" class="count blue"></div>
-
-                          <h3>Total Awarded</h3>
-                          <p></p>
+                          <div id="projects" class="count blue" style="font-size:50px;"></div>
+<p></p>
+                          <h3>ISC Funded Projects</h3>
+<h4 id="prj_summary" style="color:#1985b6; margin-left:10px"></h4> <p ><a style="font-size:12px;color:blue; background:#eeeeee" href="isc.html">Learn More...</a></p>                 
                         </div>
                       </div>
-                      
-<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+
+                      <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='rugs.html'">
                         <div class="tile-stats" style="background-color:#1985b6">
-                          <div class="icon" style="color:#ffffff"><i class="fa fa-users"></i>
+                          <div class="icon" style="color:white"><i class="fa fa-users"></i>
                           </div>
-                          <div id="primaryinv" class="count" style="color:#ffffff"></div>
-
-                          <h3>Teams Funded</h3>
-                          <p style="color:#ffffff"></p>
+                          <div id="groups" class="count" style="color:#ffffff; font-size:50px;"></div>
+<p></p>
+                          <h3>Funded User Groups</h3>
+                          <h4 id="cities" style="color:#eeeeee; margin-left:10px"></h4> <p ><a style="color:#ffffff" href="rugs.html">Learn More...</a></p>
                         </div>
                       </div>
-<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="tile-stats">
-                          <div class="icon" style="color:#99c9de"><i class="fa fa-calendar"></i>
-                          </div>
-                          <div id="years" class="count blue"></div>
 
-                          <h3>Years </h3>
-                          <p></p>
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='events.html'">
+                        <div class="tile-stats" style="background-color:#ffa500">
+                          <div class="icon" style="color:#eeeeee"><i class="fa fa-comments"></i>
+                          </div>
+                          <div id="events" class="count" style="font-size:50px;color:#ffffff;"></div>
+
+                          <h3 style="color:#ffffff">Sponsored Events</h3>
+ 			<h4 id="event_summary" style="color:#eeeeee; margin-left:10px"></h4> <p ><a style="color:#ffffff" href="events.html">Learn More...</a></p>
+                        </div>
+                      </div>
+
+
+
+                                           
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='https://benubah.github.io/r-community-explorer/rladies.html'">
+                        <div class="tile-stats" style="background-color:#fae4ff">
+                          <div class="icon" style="color:#920076"><i class="fa fa-flag"></i>
+                          </div>
+                          <div id="rladies" class="count" style="font-size:50px; color:#920076;"></div>
+
+                          <h3>R-Ladies Chapters </h3>
+<h4 id="rladies_summary" style="color:#34495e; margin-left:10px"></h4> <p ><a style="color:purple" href="https://benubah.github.io/r-community-explorer/rladies.html">Learn More...</a></p>
                         </div>
                       </div>
                              </div></div></div>
@@ -353,7 +469,7 @@ ourdate = "by " + months[d.getMonth()] + ", " + d.getUTCFullYear();
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Yearly - Grant Cycle Spending</h2>
+                    <h2>Sponsored by our Members</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -363,238 +479,127 @@ ourdate = "by " + months[d.getMonth()] + ", " + d.getUTCFullYear();
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="x_content>
-               <div class="container">
-               <div id="rcon_chart" style="height:400px;"></div>
-			</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Number of Funded Projects Annually</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                              </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
                   <div class="x_content">
 
-              <div id="rcon_chart2" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
+<div class="slider">
 
 
-             
+   <div class="slides">
 
+    <div id="slide-1">
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:300px; height:150px">
 
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2 style="color:#1985b6; font-weight:bold">Find an ISC Project</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="https://www.r-consortium.org/projects/awarded-projects">Read Project Details</a>
-                          </li>
-                          <li><a href="https://www.r-consortium.org/projects/call-for-proposals">Call for Proposals</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-
-<div class="container">
-   <a name="dt"></a>
-  <div id="table-container" style="margin-left:-15px;background-color:white">
-    
-    <!-- /.container -->
-    <script type="text/javascript">
-      
-        //my custom function that creates a hyperlink
-  function format_link(link){
-    if (link)
-      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-    else
-      return "";
-  }
-      
-      init_table({
-        csv_path: 'data/rcon.csv', 
-        element: 'table-container', 
-        allow_download: false,
-        csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"order": [[0, "desc" ]], "paging": true, 
-    "bScrollCollapse": true,
-    "bPaginate": false,
-    "bJQueryUI": true,
-    "aoColumnDefs": [
-        { "sWidth": "10%", "aTargets": [-1] }
-    ]
-},
-        custom_formatting: [[7, format_link]] //execute the function on the 7th column of every row
-      });
-    </script>
+<a href="http://www.microsoft.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_msft-300x184.png" alt="Logo Image" width="250" height="150" />
+		</a>
 </div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:300px; height:150px">
+
+<a href="https://www.moore.org/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2017/01/logo-light.png" alt="Logo Image" width="250" height="100"/>
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:300px; height:150px">
+
+<a href="http://www.rstudio.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_rstudio-300x184.png" alt="Logo Image" width="250" height="150" />
+		</a>
+</div>
+    </div>
+
+    <div id="slide-2">
+
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:300px; height:150px">
+
+      <a href="https://www.gene.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2019/03/genentech-300x184.png" alt="Logo Image" width="250" height="150" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:300px; height:150px">
+<a href="http://www.tibco.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_tibco-300x184.png" alt="Logo Image" width="250" height="150" />
+		</a>
 </div>
 
-                    
 
-                  </div>
+
+    </div>
+    <div id="slide-3" class="col-md-12">
+      
+
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+<a href="http://www.alteryx.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_alteryx-300x184.png" alt="Logo Image" width="120" height="90" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+
+<a href="http://www.datacamp.com" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/11/logo_full_dark-9a158673c8bc7d014160717fdd3165c7.png" alt="Logo Image" width="140" height="50" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+
+<a href="http://esri.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_esri-300x184.png" alt="Logo Image" width="120" height="90" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+
+<a href="http://www.google.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_google-300x184.png" alt="Logo Image" width="120" height="90" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+
+<a href="http://www.mango-solutions.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/Mango-Logo-Colour-300x109.png" alt="Logo Image" width="130" height="55" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+
+<a href="http://www.oracle.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_oracle-300x184.png" alt="Logo Image" width="120" height="90" />
+		</a>
+</div>
+<div class="col-md-2 col-sm-2 col-xs-2" style="width:150px; height:100px">
+
+<a href="http://procogia.com/" target="blank">
+			<img class="" src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/procogia-horizontal-light-bg-300x71.png" alt="Logo Image" width="120" height="40" />
+		</a>      
+</div>
+
+
+    </div>
+
+    <div id="slide-4" >
+<a href="http://www.r-project.org/" target="blank">
+			<img  src="https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/logo_rfoundation-300x184.png" alt="Logo Image" />
+		</a>
+
+    </div>
+      </div>
+  
+<div class="buttons" style="justify-contents:center;">
+<button type="button" class="btn btn-info source bg-blue" onclick="window.location.href='#slide-4'"> R Foundation Member </button>
+  <button type="button" class="btn btn-secondary source" style="background:#E5E5E5; color:blue" onclick="window.location.href='#slide-1'"> Platinum Members </button>
+  <button type="button" class="btn btn-warning source" onclick="window.location.href='#slide-2'"> Gold Members </button>
+  <button type="button" class="btn btn-default source " onclick="window.location.href='#slide-3'"> Silver Members 
+</div>
+
+
+</div>
+         	  </div>
                 </div>
               </div>
-
-              <div class="col-md-8 col-sm-8 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Status of Projects</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <div id="status_chart2" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Status of All Projects</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-     <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <div id="status_chart" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Work-Product by Funding</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <div id="echart_pie" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Work-Product by Number of Projects</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <div id="echart_pie2" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
-
              
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Funding Levels</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <div id="echart_pie_fundlevel" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Funding Levels </h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-     <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-                    <div id="echart_pie_fundlevel2" style="height:400px;"></div>
-
-                  </div>
-                </div>
-              </div>
-
 <div class="buttons">
-<button type="button" class="btn btn-info btn-lg btn-block" onclick="window.location.href='https://www.r-consortium.org/projects/call-for-proposals'"> INTERESTED IN STRENGTHENING THE R COMMUNITY? SUBMIT A PROPOSAL </button>
+<button type="button" class="btn btn-info btn-lg btn-block bg-blue" onclick="window.location.href='https://www.r-consortium.org/about/join'"> JOIN R CONSORTIUM TO DO MORE! </button>
 </div>
 
-            </div>
 
- 
-
+                </div>
           </div>
-
-
         </div>
         <!-- /page content -->
 
@@ -620,9 +625,7 @@ ourdate = "by " + months[d.getMonth()] + ", " + d.getUTCFullYear();
  <!-- Custom Theme Scripts -->
     <script src="js/echarts/custom.min.js"></script>
 <script src="js/echarts/customdata.js"></script>
-<script src="js/jquery.csv.min.js"></script>
-    
-
-	
+<script src="js/jquery.csv.min.js"></script>	
   </body>
 </html>
+
