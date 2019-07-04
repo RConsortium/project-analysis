@@ -7,6 +7,8 @@ The project hopes that presenting these achievements in a data-driven manner to 
 ### Landing (Home) Page
 [https://rconsortium.github.io/project-analysis/](https://rconsortium.github.io/project-analysis/)
 
+![image](rconsortium-home.png)
+
 ### ISC Projects Dashboard: 
 [https://rconsortium.github.io/project-analysis/isc.html](https://rconsortium.github.io/project-analysis/isc.html)
 
