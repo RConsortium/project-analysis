@@ -4,9 +4,15 @@ This is an infrastructure that provides a data-driven approach to render the yea
 
 The project hopes that presenting these achievements in a data-driven manner to the R community, the data science community and prospective R Consortium members will promote greater transparency, productivity and community inclusiveness around R Consortium activities.
 
+### Landing (Home) Page
+[https://rconsortium.github.io/project-analysis/](https://rconsortium.github.io/project-analysis/)
+
 ### ISC Projects Dashboard: 
 [https://rconsortium.github.io/project-analysis/isc.html](https://rconsortium.github.io/project-analysis/isc.html)
 
 
 ### RUGS Program Dashboard: 
 [https://rconsortium.github.io/project-analysis/rugs.html](https://rconsortium.github.io/project-analysis/rugs.html)
+
+
+### Events Program Dashboard
