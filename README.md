@@ -18,3 +18,4 @@ The project hopes that presenting these achievements in a data-driven manner to 
 
 
 ### Events Program Dashboard
+[https://rconsortium.github.io/project-analysis/events.html](https://rconsortium.github.io/project-analysis/events.html)
