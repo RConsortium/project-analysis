@@ -28,9 +28,6 @@
     <script src="js/csv_to_html_table.js"></script>
 
 <style>  
-.bg-black  { background-color: var(--black) }
-.bg-gray   { background-color: var(--gray) }
-.bg-silver { background-color: var(--silver) }
 
 .slider {
   width: 100%;
@@ -412,20 +409,24 @@ document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].ci
                 
                   <div class="x_content">
                     <div class="row">
-<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='isc.html'">
-                        <div class="tile-stats" >
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='isc.html'" >
+                        <div class="tile-stats" onmouseover="this.style.background='#e5e5e5';" onmouseout="this.style.background='white';">
                           <div class="icon" style="color:red"><i class="fa fa-tasks"></i>
                           </div>
                           <div id="projects" class="count blue" style="font-size:50px;"></div>
 <p></p>
+
+
                           <h3>ISC Funded Projects</h3>
-<h4 id="prj_summary" style="color:#1985b6; margin-left:10px"></h4> <p ><a style="font-size:12px;color:blue; background:#eeeeee" href="isc.html">Learn More...</a></p>                 
+<h4 id="prj_summary" style="color:#1985b6; margin-left:10px"></h4> <p ><a style="font-size:12px;color:blue; background:#eeeeee" href="isc.html">Learn More...</a></p>
+
+                          
                         </div>
                       </div>
 
 
                       <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='rugs.html'">
-                        <div class="tile-stats" style="background-color:#1985b6">
+                        <div class="tile-stats" style="background-color:#1985b6" onmouseover="this.style.background='gray';" onmouseout="this.style.background='#1985b6';">
                           <div class="icon" style="color:white"><i class="fa fa-users"></i>
                           </div>
                           <div id="groups" class="count" style="color:#ffffff; font-size:50px;"></div>
@@ -437,7 +438,8 @@ document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].ci
 
 
 <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='events.html'">
-                        <div class="tile-stats" style="background-color:#ffa500">
+                        <div class="tile-stats" style="background-color:#ffa500" onmouseover="this.style.background='gray';" onmouseout="this.style.background='#ffa500';">
+
                           <div class="icon" style="color:#eeeeee"><i class="fa fa-comments"></i>
                           </div>
                           <div id="events" class="count" style="font-size:50px;color:#ffffff;"></div>
@@ -451,7 +453,7 @@ document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].ci
 
                                            
 <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="window.location.href='https://benubah.github.io/r-community-explorer/rladies.html'">
-                        <div class="tile-stats" style="background-color:#fae4ff">
+                        <div class="tile-stats" style="background-color:#fae4ff" onmouseover="this.style.background='#efb0fe';" onmouseout="this.style.background='#fae4ff';">
                           <div class="icon" style="color:#920076"><i class="fa fa-flag"></i>
                           </div>
                           <div id="rladies" class="count" style="font-size:50px; color:#920076;"></div>
@@ -462,10 +464,7 @@ document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].ci
                       </div>
                              </div></div></div>
 
-
-
-
-            <div class="row">
+	<div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
