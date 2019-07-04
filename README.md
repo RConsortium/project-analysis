@@ -4,7 +4,7 @@ This is an infrastructure that provides a data-driven approach to render the yea
 
 The project hopes that presenting these achievements in a data-driven manner to the R community, the data science community and prospective R Consortium members will promote greater transparency, productivity and community inclusiveness around R Consortium activities.
 
-### Landing (Home) Page
+### Home (Dashboard Landing) Page
 [https://rconsortium.github.io/project-analysis/](https://rconsortium.github.io/project-analysis/)
 
 ![image](rconsortium-home.png)
