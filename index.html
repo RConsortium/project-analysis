@@ -313,6 +313,8 @@ var group2 = JSON.stringify(group);
   var parsedGroup = JSON.parse(group2);
 
 document.getElementById('groups').innerHTML = parsedGroup.length;  
+	
+	
 });
 
 //ISC Widget
@@ -401,6 +403,17 @@ d3.json("https://raw.githubusercontent.com/benubah/r-community-explorer/master/d
 document.getElementById('rladies').innerHTML = data[0][0].chapters; 
 document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].city + " Cities, " + data[0][0].countries + " Countries";  
 });
+	 $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+     });
 };
 </script>
 
