@@ -402,7 +402,6 @@ d3.json("https://raw.githubusercontent.com/benubah/r-community-explorer/master/d
 
 document.getElementById('rladies').innerHTML = data[0][0].chapters; 
 document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].city + " Cities, " + data[0][0].countries + " Countries";  
-});
 	 $('.count').each(function () {
         $(this).prop('Counter',0).animate({
             Counter: $(this).text()
@@ -414,6 +413,8 @@ document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].ci
             }
         });
      });
+});
+	
 });
 </script>
 
