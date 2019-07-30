@@ -274,7 +274,7 @@
             <div class="clearfix"></div>
 
 <script>
- window.onload = function(){
+ $(document).ready(function() {
 d3.csv("data/rugs.csv").then(function(data) {
    var cleandata = data.map(function(d) {
     var cleanD = {};
@@ -414,7 +414,7 @@ document.getElementById('rladies_summary').innerHTML = "Across " + data[0][0].ci
             }
         });
      });
-};
+});
 </script>
 
 <div class="row">
