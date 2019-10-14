@@ -1,4 +1,9 @@
 Year,GrantCycle,Project,WorkProduct, status, PrimaryInvestigator, Email, URL,amount
+2019, Spring, Enhancing usability of sample size calculations and power analyses in R with a Task View page and accompanying tutorials, Infrastructure, Ongoing, Richard Webster, rwebster@cheo.on.ca, https://cheori.org/samplesize/, 13912
+2019, Spring, A central class for tracking and movement data, Package, Ongoing, Mathieu Basille, https://github.com/mablab/sftraj, 10000
+2019, Spring, R-global: analysing spatial data globally, Package, Ongoing, Edzer Pebesma, edzer.pebesma at uni-muenster.de, https://github.com/r-spatial/global/, 10000
+2019, Spring, Expanding the 'metaverse'; an R ecosystem for meta-research, Infrastructure, Ongoing, Martin Westgate, martin.westgate at anu.edu.au, https://rmetaverse.github.io/, 20171
+2019, Spring, R Community Collaboratives, Infrastructure, Ongoing,  Angela Li, angela at angelalidata.com, https://github.com/unconf-toolbox, 20000
 2018, Fall, serveRless, Package, Ongoing, Christoph Bodner, , https://github.com/harlecin/serverless, 10000
 2018, Fall, Symbolic Formulae for Linear Mixed Models, Package, Ongoing, Emi Tanaka, , https://emitanaka.github.io/r/posts/2019-03-07-symbolic-formulae-for-linear-mixed-models/, 6000
 2018, Fall, Editorial assistance for the R Journal, R-Journal, Ongoing, Dianne Cook, , https://rjpilot.netlify.com/, 50000
